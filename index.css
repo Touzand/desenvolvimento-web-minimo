@@ -1,0 +1,213 @@
+/* @link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+
+:root {
+  --background: #1a1e22;
+  --text-color-light: #ddd;
+  --text-color-light-50: grey;
+  --primal-color: #aaee65;
+  --primal-color-50: #94b27f;
+  --blockquote-text-color:grey;
+  --step--2: clamp(0.81rem, calc(0.59rem + 0.1vw), 0.96rem);
+  --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.2rem);
+  --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+  --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+  --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
+  --step-5: clamp(1.27rem, calc(1.75rem + 2.56vw), 4.58rem);
+}
+
+html {
+  font-family: "Noto Sans Mono", monospace;
+  background-color: var(--background);
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 1rem;
+  margin: 0;
+  min-width: auto;
+  max-width: 700px;
+  margin: auto;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+a {
+  color: var(--primal-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: var(--text-color-light);
+  font-size: var(--step--1);
+}
+
+header {
+  text-align: left;
+  margin: 5rem 0;
+}
+
+header .indic{
+  margin-top:4rem;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: left;
+  gap:.25rem;
+}
+
+header .indic a{
+  font-size:var(--step--1);
+  border:solid thin var(--primal-color);
+  border-radius: .25rem;
+  padding:.5rem;
+}
+
+h1 {
+  font-size: var(--step-3);
+}
+
+blockquote {
+  background: transparent;
+  border-left: 6px solid var(--blockquote-text-color);
+  margin: 1.5em 10px;
+  padding: 1rem 4rem;
+  quotes: "\201C""\201D""\2018""\2019";
+  color: var(--blockquote-text-color);
+}
+blockquote:before {
+  color: var(--blockquote-text-color);
+  content: open-quote;
+  font-family: cambria, Georgia;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+blockquote cite {
+  color:  var(--text-color-light-50);
+  font-size: 1rem;
+  display: block;
+  margin: 1rem;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+header a {
+  font-size: var(--step-3);
+  display:inline-block;
+  margin-bottom:0rem;
+}
+
+header h4{
+  font-size: var(--step--1);
+}
+
+ul{
+color:grey;
+font-size: var(--step--1);
+line-height: 2rem;
+}
+
+ul span{
+color: var(--text-color-light);
+}
+
+footer{
+  width: 100%;
+  text-align:center;
+  color:var(--text-color-light-50);
+}
+
+.content-list{
+display:flex;
+flex-direction: column;
+font-size: var(--step--1);
+margin:5rem 0;
+}
+
+.resalt {
+  background-color: var(--text-color-light-50);
+  color: var(--background);;
+  border-radius: 0.15rem;
+  padding: 0 0.5rem;
+}
+
+.lt {
+  color: var(--text-color-light);
+}
+
+.lt-50 {
+  color: var(--text-color-light-50);
+}
+
+.pm {
+  color: var(--primal-color);
+}
+
+.pm-50 {
+  color: var(--primal-color-50);
+}
+
+.subtitle{
+  font-size: var(--step-1);
+  color:var(--primal-color);
+  scroll-margin-top: 1rem;
+}
+
+.image{
+  text-align: center;
+  padding:2rem 0;
+}
+
+.image img{
+  max-width: 100%;
+}
+
+.comment{
+  color:grey;
+  border-left:solid thick grey;
+  padding-left:2rem;
+}
+
+.resum-link{
+border:solid thin var(--text-color-light-50);;
+border-radius:.25rem;
+margin:1rem;
+cursor:pointer;
+}
+
+.resum-link:hover{
+  border-color:var(--primal-color);
+}
+
+.point-resum{
+padding:1rem;
+}
+
+
+

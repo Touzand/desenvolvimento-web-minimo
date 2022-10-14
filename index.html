@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      property="og:title"
+      content="Alan G. Alonso - desenvolvimento web desde um ponto de vista minimalista"
+    />
+    <meta property="og:type" content="blog" />
+    <meta
+      property="og:image"
+      content="/static/website-social-card-44070c4a901df708aa1563ac4bbe595a.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://touzand.github.io/desenvolvimento-web-minimalista"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./gruvbox.css" />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <meta name="theme-color" content="#1a1e22" />
+    <title translate="no">Alan G. Alonso</title>
+  </head>
+  <body>
+    <header>
+      <a href="https://github.com/touzand" target="_blank">Alan G. Alonso</a>
+      <h4 class="lt-50">
+        O desenvolvimento web desde o ponto de vista minimalista
+      </h4>
+      <div class="indic">
+        <a href="#windows" translate="no">Windows</a>
+        <a href="#terminal" translate="no">Terminal</a>
+        <a href="#vim" translate="no">Vim</a>
+        <a href="#min" translate="no">Min browser</a>
+      </div>
+    </header>
+    <main>
+      <p>
+        Antes de falarmos um pouco sobre tecnologia, vamos falar sobre um
+        problema que muitos de nós, iniciantes, tivemos que enfrentar ao iniciar
+        no mundo do desenvolvimento web ou desenvolvimento de software em geral.
+      </p>
+      <p>
+        Nosso ambiente de trabalho: Estou falando sobre nossos computadores,
+        nossos editores de código e todas aquelas ferramentas que temos que usar
+        e revisar várias vezes ao estudar ou trabalhar. Vamos dividir este
+        problema em diferentes pontos, analisar todos eles e ver a forma de como
+        eu resolvi esses problemas.
+      </p>
+      <p>
+        Você já saberá que o kit de ferramentas padrão é o
+        <span class="resalt">Visual Studio Code</span> e o
+        <span class="resalt">Google Chrome</span> quando falamos de
+        desenvolvimento de software.
+      </p>
+      <p>
+        Se você pode usar essas ferramentas sem problemas, recomendo que
+        continue lendo porque vamos discutir vários tópicos com uma ideologia
+        minimalista em mente, então se você quiser implementar essa forma de
+        trabalhar, vá em frente
+      </p>
+      <p>
+        Por outro lado, se você não pode usar essas ferramentas ou é difícil
+        fazê-lo devido a um computador ruim, este blog é para você. Eu quero que
+        você saiba que essas ferramentas que eles recomendam
+        <span class="resalt">(visual studio code e chrome)</span> não são as
+        melhores, muito menos as únicas alternativas por aí. Recomendo que
+        continue lendo para aprender e conhecer algumas das melhores
+        alternativas para poder trabalhar ou estudar desenvolvimento de software
+        de forma minima, o que sempre ajuda a fazer esse processo com mais
+        fluidez e calma.
+      </p>
+      <p>
+        Enquanto vamos em frente com esse blog, vou te contar o que fiz e os
+        passos que tive que seguir para poder estudar e me preparar como
+        desenvolvedor de software de forma fluida e tranquila. Além disso,
+        pessoalmente, sempre tive em mente a ideia de que tenho que fazer o
+        melhor possível com o mínimo possível. Sempre vendo como fazer tudo de
+        uma forma mais simples, fácil e mínima. Sem perceber, levei essa
+        ideologia para todas as áreas da minha vida, incluindo meus estudos e
+        meu trabalho. E como diria um conhecido pintor alemão;
+      </p>
+      <blockquote>
+        A habilidade da simplificação consiste em eliminar o desnecessário para
+        que o necessário possa falar - Hans Hofmann
+      </blockquote>
+      <p>
+        Neste blog não falaremos sobre métodos de estudo ou roadMaps para
+        aprender esta ou aquela tecnologia. Este blog é dedicado e destinado
+        àqueles estudantes de desenvolvimento de software autodidatas que, como
+        eu alguns anos atrás, estão lutando para continuar seus estudos com um
+        computador lento, com um editor de código que não reage ou com código
+        que não copila. ... deixando este ponto claro, vamos continuar
+      </p>
+      <p class="comment">
+        Se você quiser pular toda a teoria e ver uma lista dos pontos vistos
+        neste blog, convido você a ir, para dar uma olhada, ao
+        <a href="#resum">resumo no final da página</a>
+      </p>
+      <h2 class="subtitle" id="notebook"># Meu notebook</h2>
+      <p>
+        Quando comecei a estudar desenvolvimento web (javascript e mais tarde
+        html, e css) meu computador era um lenovo com uma CPU Intel(R)
+        Celeron(R) N4020 @ 1.10GHz 1.10GHz, 4G de ram e 64 bits. Na hora de
+        comprá-lo eu não tinha idéia sobre computadores e bem, digamos que
+        embora eu não tenha entendido nada, essa lista de recursos parecia muito
+        boa e pelo preço que paguei pensei que estava comprando um super
+        computador... ingênuo, eu sei. Para encurtar a história, o Visual Studio
+        Code levava cerca de 20 minutos para ser aberto e, neste momento, eu não
+        tinha uma única extensão instalada.
+      </p>
+      <p>
+        Mas depois de um tempo percebi que algo estava acontecendo. algo estava
+        errado com o meu computador, então decidi transformar meu laptop
+        exclusivamente em uma ferramenta para estudo, para desenvolvimento web
+        porque eu estava focado em continuar meus estudos para que eu pudesse
+        finalmente me dedicar a isso (spoiler: acaba bem) e Foi lá que eu
+        realmente comecei a trabalhar nisso
+      </p>
+      <h2 class="subtitle" id="windows"># Depuração do Windows</h2>
+      <p>
+        A primeira coisa que fiz foi formatar meu laptop. Depois disso, cuidei
+        de excluir todos os programas que vêm por padrão no Windows, incluindo
+        os mais básicos como: o aplicativo da câmera, a galeria, o visualizador
+        de imagens, o microfone, o aplicativo de notas, entre muitos outros
+        pequenos aplicativos que, apesar de pesarem alguns mbs (alguns até kbs),
+        eu queria ter certeza de que não havia nada mais do que minhas
+        <a href="#terminal" translate="no">Terminal</a>
+        ferramentas para estudar e trabalhar. Existem pequenos programas que são
+        responsáveis ​​por excluir todos esses aplicativos com apenas um clique,
+        não são difíceis de encontrar.
+      </p>
+      <blockquote>
+        A produtividade nunca é um acidente. É sempre o resultado de um
+        compromisso com a excelência, planejamento inteligente e esforço
+        concentrado. - Paul J. Meyer
+      </blockquote>
+      <p>
+        depois de deixar meu windows completamente limpo, fui nas configurações
+        e configurações avançadas. Eu não tinha nada no meu computador então não
+        estava preocupado em estragar nada, como eu disse no início, eu havia
+        decidido que meu laptop seria uma ferramenta totalmente voltada para o
+        desenvolvimento, tanto para estudar quanto trabalhando.
+      </p>
+      <p>
+        Cuidei de desativar tudo o que não era necessário ou coisas inúteis.
+        aquilo que ainda forçava meu computador um pouco de alguma forma, como:
+        animações, fundos transparentes, efeitos e transições de sistema.
+        Vejamos algumas coisas que desativei ou desinstalei do meu computador
+        para você ter uma ideia:
+      </p>
+      <div class="image">
+        <img
+          src="http://imgfz.com/i/e92oxSU.png"
+          alt="configuracion de windows"
+        />
+      </div>
+      <p class="comment">
+        Estas são as configurações de aparência e desempenho de Windows. você
+        pode chegar até eles pressionando as teclas
+        <span class="resalt">windows</span> + <span class="resalt">r</span> e
+        digitando <span class="resalt">SystemPropertiesPerformance.exe</span>.
+        Você também pode fazer isso digitando 'configurações de aparência' no
+        mecanismo de pesquisa do Windows
+      </p>
+      <div class="image">
+        <img
+          src="http://imgfz.com/i/VCSKEif.png"
+          alt="configuracion de windows"
+        />
+      </div>
+      <p class="comment">você pode ver essas opções acessando as configurações de acessibilidade e entrando na seção de efeitos visuais</p>
+      <h2 class="subtitle" id="terminal"># A Terminal</h2>
+      <p>Se tem uma coisa que você deve saber usar quando se fala em desenvolvimento de software, é o terminal.</p>
+      <p>
+        Uma das coisas que sempre foi criticada pelo Windows no desenvolvimento
+        de software é a falta de um bom terminal, embora hoje existam maneiras
+        de melhorar isso.
+      </p>
+      <p>
+        A primeira coisa é instalar o <a href='https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=pt-br&gl=br' target="_blank">terminal do Windows</a>. este terminal é
+        desenvolvido pela microsoft e permite abrir o <span class='resalt'>CMD</span>, o <span class='resalt'>Powershell</span> ou o
+        <span class='resalt'>shell do Azure</span>, além de outros. É facilmente personalizável com
+        transparências, fundo, cores e perfis.
+      </p>
+      <p>
+        A próxima coisa seria melhorar o powershell. você pode instalar um shell
+        melhor como o <a href='https://ohmyposh.dev/' target='_blank'>OhMyPosh</a>, que permite que você tenha um programa
+        semelhante ao <a href='https://www.zsh.org/' target='_blank'>zsh</a> no Windows e também é facilmente personalizável.
+      </p>
+      <div class="image">
+        <img
+          src="http://imgfz.com/i/HVPGBix.png"
+          alt="oh my posh"
+        />
+      </div>
+      <p>
+        Mas se no final você não gostar do powershell, você tem a opção de
+        instalar o <a href='https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux' target='_blank'>Windows subsystem for linux</a>. isso é basicamente linux
+        dentro do windows. desta forma você pode ter sistemas como ubunto, kali
+        linux ou debian e todos os seus programas como o próprio bash
+        interagindo dentro do seu sistema linux. Ele ainda permite que você
+        execute GUIs do Linux dentro do Windows.
+      </p>
+      <h2 class="subtitle" id="vim"># Vim - Primeiro contato</h2>
+      <p>
+        O Vim é um editor de texto, muito famoso porque é para terminal e porque
+        possui combinações de teclas muito poderosas, embora complexas de
+        aprender. Ele vem como uma evolução para outro editor muito semelhante,
+        usado no UNIX, chamado Vi.
+      </p>
+      <p>
+        Vim, embora tenha um entorno gráfico, onde é mais utilizado é
+        diretamente do terminal. Para muitos ( incluindo eu ) isso é uma
+        vantagem porque eles podem trabalhar de uma conexão SSH para um servidor
+        remoto. Outro ponto de diferenciação do Vim é que ele é centrado no
+        teclado. Embora existam config e plugins para fazer funcionar com o
+        mouse, a graça é usá-lo com o teclado porque assim você economiza tempo.
+      </p>
+      <p class="comment">
+        E foi aí que descobri o touchTyping, mas podemos falar sobre isso em
+        outro blog
+      </p>
+      <p>
+        Depois de preparar totalmente meu computador (depois de limpá-lo
+        'completamente' e desabilitar tudo o que não preciso), voltei ao tópico
+        principal, desenvolvimento web. então comecei a pesquisar muito sobre
+        editores de código e todos os tópicos relacionados e algo ficou claro
+        para mim... Visual Studio Code totalmente eliminado da lista.
+      </p>
+      <p>
+        Eu havia baixado esse editor inicialmente porque era o que todos
+        recomendavam, o que me parece engraçado, pois suponho que as pessoas que
+        o recomendam pensam que todos têm um computador minimamente bom para
+        executar esse programa, e sim, pelo menos no meu caso funcionou... mas
+        extremamente lento, com muito lag... eu não conseguia escrever uma linha
+        de código sem algum lag.
+      </p>
+      <p>
+        Mas claro, acho que eles ( As pessoas que recomendam o Visual Studio
+        Code ) acham que esse editor é a melhor opção devido ao autocomplete, o
+        grande número de extensões que tem para ajudar os novatos, ou temas para
+        customizar e tudo mais, mas esses pontos nem sempre são os mais
+        importantes.
+      </p>
+      <p class="comment">
+        Na verdade, Eu não me importava nem um pouco que o editor me ajudasse a
+        programar autocompletando meu código ou que meu editor fosse bonito...
+        eu não me importava nem um pouco
+      </p>
+      <p>
+        A primeira vez que instalei o Vim no meu terminal, fiquei completamente
+        perdido (normal) já enfrentando o editor você tem que aprender coisas e
+        comandos para poder se mover minimamente e rolar pelo editor como os
+        modos do vim, teclas, linha de comandos do vim e claro... você tem que
+        aprender a sair do vim (spoiler: você terá que assistir um tutorial) mas
+        realmente instalar vim é muito facil
+      </p>
+      <p>Se você estiver no Ubuntu/Debian, basta executar em um terminal:</p>
+      <pre><code>sudo apt install vim</code></pre>
+      <p>Se você estiver no Fedora:</p>
+      <pre><code>sudo dnf install vim</code></pre>
+      <p>Se você estiver no Arch Linux:</p>
+      <pre><code>pacman -S vim</code></pre>
+      <p>Se você preferir a versão snap:</p>
+      <pre><code>sudo snap isntall vim-editor --beta</code></pre>
+      <p>
+        No Windows, se você estiver procurando pelo .exe do vim, poderá
+        encontrá-lo na
+        <a href="https://github.com/neovim/neovim/releases" target="_blank"
+          >página de lançamentos</a
+        >. Clique em <span class="resalt">Ativos</span> e você encontrará o
+        arquivo .zip para Win64.
+      </p>
+      <p>
+        Mais tarde você perceberá que o vim não é apenas um software puro, mas
+        possui outras versões que funcionam mais ou menos como as distribuições
+        Linux, como <span class="resalt">UltraVim, SpaceVim, NeoVim</span> entre
+        outras. mais tarde, se você estiver interessado, poderá experimentá-los
+        sem problemas, pois a maioria das coisas que você aprende no vim será
+        útil para essas outras versões. Eu pessoalmente comecei a usar o NeoVim
+        diretamente e é isso que eu recomendo pra você, o
+        <span class="resalt">NeoVim</span>
+      </p>
+      <p>
+        Você também pode instalá-lo facilmente se tiver o gerenciador de pacotes
+        <a href="https://chocolatey.org/" target="_blank">Chocolatey</a> e
+        usando esse comando no seu temrinal
+      </p>
+      <pre><code>choco install neovim</code></pre>
+      <p>Ou com o <a href="https://scoop.sh/" target="_blank">Scoop</a></p>
+      <pre><code>scoop bucket add versions
+scoop install neovim-nightly</code></pre>
+      <p>
+        E isso nos levaria a outra pergunta... existe diferença entre Vim e
+        Nvim?
+      </p>
+      <h2 class="subtitle"># Vim vs Nvim - existe uma diferença?</h2>
+      <p>
+        Para começar, o Vim é desenvolvido principalmente por seu criador,
+        embora seja um projeto de código aberto e todos possam contribuir, quem
+        decide e tem o controle de todo o projeto é seu criador. O Neovim é um
+        projeto mais recente que o Vim, é mais voltado para a comunidade e seria
+        apenas isso.
+      </p>
+      <p>
+        Qual é a diferença entre Vi e Vim? Vim (do inglês Vi IMproved) é uma
+        versão melhorada do editor de texto Vi, presente em todos os sistemas
+        UNIX.
+      </p>
+      <p class="comment">
+        Neste blog não vamos falar a fundo sobre o vim, seus modos e comandos,
+        só quero que você tenha uma ideia para poder continuar com o tópico sem
+        se perder
+      </p>
+      <h2 class="subtitle"># Vim - Configuração global</h2>
+      <p>
+        Uma vez instalado o <span class="resalt">vim</span> ou o
+        <span class="resalt">nvim</span>, você deve configurá-lo para funcionar
+        como um editor de código para programação, pois por enquanto é apenas um
+        editor de texto (como um bloco de notas, mas com esteróides) e por
+        enquanto está assim...
+      </p>
+      <div class="image">
+        <img src="http://imgfz.com/i/azwHRGZ.png" alt="vim" />
+      </div>
+      <p>
+        Quando você começa a configurá-lo, você tem duas opções, configurá-lo
+        usando <span class="resalt">VimScript</span> ou
+        <span class="resalt">Lua</span>. dentro da comunidade há uma pequena
+        disputa sobre esta questão. sobre se o vimScript é melhor ou lua é
+        melhor. mas a verdade é a seguinte; Lua é mais ergonômica para escrever
+        programas/plugins, mas o vimscript é mais ergonômico para uso interativo
+        (e talvez arquivos de configuração menores).
+      </p>
+      <p>
+        E aqui estamos falando de conforto ao configurar o vim ou programar um
+        plugin. vimScript é muito repetitivo e chato, e lua é mais confortável
+        e... divertido de usar... poderíamos dizer. mas a verdade é que, se você
+        não é um vimmer, não deve se preocupar muito com isso, ainda não, o que
+        você precisa se preocupar é que seu vim funcione corretamente, então
+        vamos dar uma olhada em algumas configurações básicas . Você escreverá
+        essas configurações em um arquivo <span class="resalt">.vimrc</span> na
+        ruta
+      </p>
+      <pre><code>~/.vimrc                     " Pra vim</code></pre>
+      <p>Ou na ruta</p>
+      <pre><code>~/.config/nvim/init.vim      " Pro Nvim</code></pre>
+      <p>se falarmos sobre o vim, caso você esteja no windows estaria no</p>
+      <pre><code>`C:/Users/&#60;SEU_USUARIO&#62;/_vimrc`</code></pre>
+      <p>
+        No Mac deve estar aqui, embora eu não tenha certeza porque não uso Mac:
+      </p>
+      <pre><code>/usr/share/vim/vimrc</code></pre>
+      <p>
+        Agora vou te falar sobre algumas configurações que recomendo para
+        começar no vim. então você pode investigar por conta própria se deseja
+        adicionar mais ou remover alguns. Acredite, é um mundo enorme que você
+        pode explorar para enriquecer sua configuração do vim.
+      </p>
+      <span class="resalt">VimScript</span>
+      <pre><code>syntax on            " Ativar destaque de sintaxe "
+set nu               " Ativar linha de numeros "
+set tabstop=4        " Mostrar guia existente com 4 espaços de largura "
+set softtabstop=4    " Mostrar guia existente com 4 espaços de largura "
+set shiftwidth=4     " Ao recuar com '>', use 4 espaços de largura "
+set expandtab        " Ao pressionar tab, insira 4 espaços "
+set smarttab         " inserir tabulações no início de uma linha de acordo com a largura do deslocamento "
+set smartindent      " inserir tabulações no início de uma linha de acordo com a largura do deslocamento "
+set hidden           " Esconde o buffer atual quando um novo arquivo é aberto "
+set incsearch        " pesquisa incremental "
+set ignorecase       " Ingore case in search "
+set smartcase        " Considere maiúsculas se houver um caractere maiúsculo "
+set scrolloff=8      " Número mínimo de linhas a manter acima e abaixo do cursor "
+set colorcolumn=100  " Desenha uma linha na linha fornecida para manter-se ciente do tamanho da linha "
+set signcolumn=yes   " Adicione uma coluna à esquerda. Útil para forro "
+set cmdheight=2      " Dê mais espaço para exibir mensagens "
+set updatetime=100   " Tempo em milissegundos para considerar as mudanças "
+set encoding=utf-8   " A codificação deve ser utf-8 para ativar os ícones de fontek "
+set nobackup         " Não faça backup de arquivos "
+set nowritebackup    " Não faça backup de arquivos "
+set splitright       " Crie as divisões verticais à direita "
+set splitbelow       " Crie as divisões verticais à direita "
+set autoread         " Atualize o vim após a atualização do arquivo de fora "
+set mouse=a          " Ativar suporte a mouse "
+filetype on          " Detecte e defina a opção de tipo de arquivo e acione o evento FileType "
+filetype plugin on   " Carregue o arquivo de plug-in para o tipo de arquivo, se houver "
+filetype indent on   " Carregue o arquivo de plug-in para o tipo de arquivo, se houver "</code></pre>
+      <p>
+        Com essas configurações globais já estamos preparando o vim para ser
+        essa ferramenta de desenvolvimento que buscamos, para que seja mais
+        confortável de usar na hora de programar. Você pode se sentir um pouco
+        mais confortável com o vim agora, mas confie em mim, isso é apenas o
+        começo. Agora vamos aos plugins...
+      </p>
+      <h2 class="subtitle" translate="no"># Vim - Plugins</h2>
+      <p>
+        Ao falar de Plugins, devemos procurar ferramentas para instalá-los. No
+        meu caso eu uso o
+        <a href="https://github.com/junegunn/vim-plug" target="_blank"
+          >Vim-Plug</a
+        >
+        do junegunn, mas também existem outras ferramentas semelhantes, como o
+        <a href="https://github.com/wbthomason/packer.nvim" target="_blank"
+          >Packer.vim</a
+        >.
+      </p>
+      <p>
+        O <span class="resalt">Vim-Plug</span> é um gerenciador de plugins
+        gratuito, de código aberto e minimalista que pode instalar ou atualizar
+        plugins em paralelo. cria clones de repositório de cada plugin
+        separadamente para minimizar o uso do espaço em disco e o tempo de
+        download
+      </p>
+      <div class="image">
+        <img src="/assets/vim-plug.gif" alt="vim-plug" />
+      </div>
+      <p>
+        Eu recomendo que você vá no repositório do github do
+        <a
+          href="https://github.com/junegunn/vim-plug#installation"
+          target="_blank"
+          >vim-plug</a
+        >
+        para aprender como se instala e entender melhor como usar e trabalhar
+        com ele. tendo o vimplug, podemos ir ao nosso arquivo de configuração
+        global do vim e adicionar essa estrutura a ele. Deve ser algo parecido
+        com isso:
+      </p>
+      <pre><code>call plug#begin()
+
+// Seus plugins aqui
+
+call plug#end()
+</code></pre>
+      <p>
+        E com esta estrutura podemos começar a instalar plugins. escrevendo algo
+        como esses três exemplos
+      </p>
+      <pre><code>call plug#begin()
+
+//A árvore NERD será carregada na primeira invocação do comando NERDTreeToggle"
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+
+//Parênteses, colchetes, aspas, tags XML e muito mais
+Plug 'tpope/vim-surround'
+
+//Escrita sem distrações no Vim.
+Plug 'junegunn/goyo.vim'
+
+call plug#end()
+</code></pre>
+      <p>
+        E já tendo eles em nossa lista de plugins você notará que ainda não há
+        alteração. isso ocorre porque para o vimplug funcionar, precisamos dizer
+        a ele para fazê-lo com alguns comandos como:
+      </p>
+      <pre><code>:PlugInstall    "Instalar plug-ins"
+:PlugUpdate     "Instalar ou atualizar plugins"
+:PlugClean      "Remova os plugins não listados (a versão bang será limpa sem aviso)"
+:PlugUpgrade    "Atualize o próprio vim-plug"
+:PlugStatus     "Verifique o status dos plug-ins"
+:PlugDiff       "Examine as alterações da atualização anterior e as alterações pendentes"</code></pre>
+      <p>
+        Então agora, como indiquei acima, precisamos digitar
+        <span class="resalt">:PlugInstall</span> na linha de comando do vim para
+        instalar nossa listas de plugins. deixe carregar, feche o vim e abra
+        novamente ou só escreva <span class="resalt">:so %</span> e pronto temos
+        nossos plugins
+      </p>
+      <p>
+        Neste ponto, eu fiquei muito animado e comecei a instalar todos os
+        plugins que via. tentando isso e aquilo. gostei muito. mas em um ponto
+        eu tinha tantos que meu vim começou a ficar lento e, claro, você sabe o
+        que eu fiz. desinstale tudo e comece do zero. selecionando muito bem
+        dessa vez qual seria a minha lista. Eu só colocaria o que realmente
+        precisava.
+      </p>
+      <p class="comment">
+        Claro, certificando-me de excluir todo o resto desses plugins, seguindo
+        a ideologia da que falamos desde o início do blog.
+      </p>
+      <p>
+        Lembre-se que neste blog estamos falando de como fazer o melhor trabalho
+        sendo minimalista, usando o mínimo possível, o mais básico, o mais leve,
+        o que não quer dizer que seja um trabalho ruim, muito pelo contrário.
+      </p>
+      <p>
+        Se você já é um desenvolvedor, sabe que quanto menos linhas e mais limpo
+        for o seu código, melhor será o desempenho, o que significa melhor em
+        geral. Eu gosto de trazer esse conceito para todos os aspectos da minha
+        vida, isso me faz sentir melhor. E acredite, sempre há uma maneira mais
+        fácil e simples de fazer as coisas
+      </p>
+      <blockquote>
+        A perfeição é alcançada, não quando não há mais nada a acrescentar, mas
+        quando não há mais nada a tirar. - Antoine de Saint-Exupéry. aviador e
+        escritor francês.
+      </blockquote>
+    </main>
+    <h2 class="subtitle" id="min" translate="no"># Min browser</h2>
+    <p>
+      Já falamos sobre um editor de texto para poder trabalhar seguindo essa
+      ideologia. mas agora vamos falar sobre um navegador mínimo muito
+      interessante que eu pessoalmente uso diariamente.
+    </p>
+    <p>
+      Você provavelmente conhece alguns navegadores mais famosos como Google
+      chrome, Opera, Firefox, Microsoft Edge, Safari entre outros, é
+      compreensível.
+    </p>
+    <p>
+      Vamos falar um pouco sobre o Google Chrome que é líder no ranking de
+      navegadores. hoje, é utilizado por mais de 3.000 milhões de usuários,
+      especificamente, por 3.378.967.819 pessoas, o que equivale a 64,91% dos
+      internautas. isso é incrível, possivelmente você está lendo este blog do
+      chrome. Isso é um tanto surpreendente, especialmente considerando a
+      magnitude do ecossistema de aplicativos e serviços online do Google,
+      incluindo YouTube, Drive, Agenda, Documentos, Maps e Earth, entre outros.
+    </p>
+    <p>
+      Mas há um problema. e eu sei que o chrome tem muitos outros problemas, mas
+      vou focar apenas em um deles, o que mais me importava naquele momento, seu
+      alto consumo de memória RAM. se você pode usar o chrome sem problemas, vá
+      em frente, mas hoje quero te apresentar uma alternativa mínima
+    </p>
+    <p>
+      Apresento a você o
+      <a href="https://minbrowser.org/" target="_blank">Min Browser</a>, um
+      navegador focado na simplicidade. Min é um navegador rápido e minimalista
+      que protege sua privacidade. Inclui uma interface projetada para minimizar
+      distrações e funçôes como:
+    </p>
+    <span class="resalt">
+      <ul>
+        <li><span>Pesquisa de texto completo das páginas visitadas</span></li>
+        <li><span>Bloqueio de anúncios e rastreadores</span></li>
+        <li><span>Visualização do Leitor Automático</span></li>
+        <li><span>Tarefas (grupos de guias)</span></li>
+        <li><span>Integração do gerenciador de senhas</span></li>
+      </ul>
+    </span>
+    <p>Entre várias outras funções. Eu recomendo que você dê uma olhada</p>
+    <div class="image">
+      <img src="https://camo.githubusercontent.com/2510a7535486383e16f1f506fd1536bde315f9780c0b8d029f6df66829aed8b6/687474703a2f2f6d696e62726f777365722e6f72672f746f75722f696d672f7365617263686261725f6475636b6475636b676f5f616e73776572732e706e67" alt="min browser" />
+      <img src="https://camo.githubusercontent.com/5c6d32672354548a0abfc88a26fa378ed2a0768917e7aaeb220797faf4810684/687474703a2f2f6d696e62726f777365722e6f72672f746f75722f696d672f7461736b732e706e67" alt="min browser" />
+      <img src="https://user-images.githubusercontent.com/10314059/53312382-67ca7d80-387a-11e9-9ccc-88ac592c9b1c.png" alt="min browser" />
+    </div>
+    <p class="comment" >Claro que o navegador Min também tem suas desvantagens. como vulnerabilidade a ataques virtuais (hacking). Vulnerabilidade que o Chrome minimiza a cada atualização</p>
+    <h2 class="subtitle" id="resum"># Resumo</h2>
+    <p>
+      E pronto (por enquanto) já contei algumas das ferramentas que utilizo
+      quando estudo ou trabalho em desenvolvimento de software. Agora vamos
+      analisá-los brevemente. vamos ver:
+    </p>
+    <div class="resum-link">
+      <p class="point-resum" data-id="windows">
+        Falamos sobre o <a href="#windows">windows e sua depuração</a> com
+        alguns pontos para te orientar, para que você tenha uma ideia de como
+        fazer.
+      </p>
+    </div>
+    <div class="resum-link">
+      <p class="point-resum" data-id="terminal">Conversamos um pouco sobre como melhorar <a href='#terminal'>seu terminal</a>. sobre ohMyPosh entre outras coisas</p>
+    </div>
+    <div class="resum-link">
+      <p class="point-resum" data-id="vim">
+        Também falamos sobre <a href="#vim">Vim e NeoVim</a>. Também comentamos
+        um pouco sobre sua configuração global, sobre seus plugins e pontos de
+        interesse como qual a diferença entre vim e neovim, ou a diferença entre
+        vimScript e Lua. Eu também disse como instalá-lo no caso do neovim e
+        onde baixar o .exe no caso do vim
+      </p>
+    </div>
+    <div class="resum-link">
+      <p class="point-resum" data-id="min">
+        e finalmente falamos de um navegador muito interessante que se adapta à
+        ideologia de que falamos. O
+        <a href="https://minbrowser.org/" target="_blank">Min Browser</a>
+      </p>
+    </div>
+    <p>E isso seria tudo, obrigado por ler e espero ter ajudado</p>
+    <footer>
+      <div class="content-list">
+        <span
+          >Coc.vim ou Builtin LPS
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/98c7ca9af16e84d279fe8ae4167847ad99794b93/7d5da/assets/images/icons/building.png"
+            class="[ icon ] [ post-subheader-icon ] [ pixelated ]"
+            alt=""
+        /></span>
+        <span
+          >VimScript vs Lua
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/98c7ca9af16e84d279fe8ae4167847ad99794b93/7d5da/assets/images/icons/building.png"
+            class="[ icon ] [ post-subheader-icon ] [ pixelated ]"
+            alt=""
+        /></span>
+        <span
+          >lista de plugins interessantes para vim e Nvim
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/98c7ca9af16e84d279fe8ae4167847ad99794b93/7d5da/assets/images/icons/building.png"
+            class="[ icon ] [ post-subheader-icon ] [ pixelated ]"
+            alt=""
+        /></span>
+      </div>
+      Feito por
+      <a href="https://github.com/touzand" target="_blank">Alan G. Alonso</a> (
+      Touzand )
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
